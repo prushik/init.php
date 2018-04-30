@@ -8,7 +8,7 @@ $file_systems = array(
 		"type" => "ext4"),
 
 	array("mount_point" => "/tmp",
-		"device" => "none",Loongson
+		"device" => "none",
 		"type" => "tmpfs"),
 
 	array("mount_point" => "/proc",
@@ -23,5 +23,5 @@ $file_systems = array(
 foreach ($file_systems as $fs)
 {
 	echo "Mounting " . $fs["device"] . " on " . $fs["mount_point"] . PHP_EOL;
-	exec("/sbin/mount " . $fs["device"] . " -t " . $fs["type"] . " " . $fs["mount_point"] . ";");
+	mount($fs["device"], $fs["mount_point"], $fs["type"], 0, "");
 }

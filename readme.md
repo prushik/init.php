@@ -1,5 +1,7 @@
 # init.php
-An init system written (almost) entirely in PHP.
+An init system written (almost*) entirely in PHP.
+
+ * I say "almost" because it requires the php_mount php extension.
 
 # Rationale
 Oh yeah, I'm gonna prove to everybody that PHP is the only language 
