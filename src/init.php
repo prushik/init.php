@@ -16,5 +16,3 @@ if (file_exists("/etc/fstab.php"))
 
 // Run the init scripts
 include "/etc/inittab.php";
-
-
